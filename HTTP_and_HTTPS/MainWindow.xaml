@@ -1,0 +1,9 @@
+﻿<Window x:Class="HamletApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hamlet" Height="450" Width="800">
+    <Grid>
+        <Button Name="LoadButton" Content="Завантажити" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="LoadButton_Click"/>
+        <TextBox Name="HamletTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0" Width="780" Height="370" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" />
+    </Grid>
+</Window>
