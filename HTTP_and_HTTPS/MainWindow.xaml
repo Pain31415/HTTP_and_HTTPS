@@ -1,0 +1,17 @@
+﻿<Window x:Class="GutenbergApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gutenberg Library" Height="600" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button Name="LoadTop100Button" Content="Завантажити топ 100 книг" Click="LoadTop100Button_Click" Margin="10"/>
+            <ListBox Name="BooksListBox" SelectionChanged="BooksListBox_SelectionChanged" Margin="10" Height="200"/>
+            <Image Name="BookCoverImage" Height="200" Margin="10" />
+            <TextBox Name="SearchTextBox" Width="200" Margin="10" />
+            <Button Name="SearchButton" Content="Пошук" Click="SearchButton_Click" Margin="10"/>
+            <TextBox Name="BookTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" Margin="10" Height="200"/>
+            <TextBox Name="AuthorTextBox" Width="200" Margin="10" />
+            <Button Name="DownloadButton" Content="Скачати книги автора" Click="DownloadButton_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
